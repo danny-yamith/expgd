@@ -33,3 +33,6 @@ El diseño permite la implementación de diferentes proveedores de planilla sin 
 2. Compila el código.
 3. Ejecuta la clase principal `PlanillasApplication`.
 4. Observa el monto total a pagar en la planilla.
+
+**Compartir Solución:** https://github.com/danny-yamith/expgd)https://github.com/danny-yamith/expgd
+
