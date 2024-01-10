@@ -1,38 +1,33 @@
 # Ejercicio Programado
 
-Este proyecto contiene una solución para el ejercicio de un procesador de planillas. El objetivo principal es calcular el monto total a pagar para una planilla de empleados.
+Este proyecto implementa un procesador de planillas para calcular el monto total a pagar en una planilla de empleados.
 
 ## Descripción
 
-La clase `ProcesadorPlanillas` implementa un método para obtener el monto total a pagar en una planilla. Esta clase tiene una dependencia hacia `ProveedorMiembrosPlanilla`, que es una dependencia externa utilizada para obtener la lista de empleados. El procesador suma el pago mensual de cada empleado activo y devuelve el total como resultado.
+El proyecto está escrito en Java 17 y utiliza Spring Boot y Lombok para facilitar el desarrollo. La clase `ProcesadorPlanillas` realiza el cálculo del monto total a pagar en una planilla, basándose en el pago mensual de los empleados activos.
 
-### Estructura del empleado:
+### Estructura del empleado
 
 - ID (entero)
 - Nombre (cadena de texto)
 - MontoMensual (flotante)
 - Activo (booleano)
 
-El proveedor de miembros de la planilla es abstracto, lo que significa que la implementación del proveedor no es parte de este ejercicio.
-
-## Pruebas Unitarias
-
-Se incluyen pruebas unitarias para cubrir todos los escenarios, incluyendo casos de excepción como:
-
-- Monto mensual negativo
-- ID igual a 0
-- Nombre vacío
-
-## Diferentes Implementaciones del Proveedor de Planilla
-
-El diseño permite la implementación de diferentes proveedores de planilla sin modificar el código existente. Esto se logra mediante el uso de la abstracción `ProveedorMiembrosPlanilla` como interfaz, permitiendo así una inyección de dependencias flexible.
+El proyecto incluye pruebas unitarias para cubrir diversos casos, incluyendo casos de excepción como montos mensuales negativos, ID igual a 0 y nombres vacíos.
 
 ## Ejecución del Proyecto
 
+### Requisitos
+
+- Java 17
+- Maven
+
+### Pasos para Ejecutar
+
 1. Clona este repositorio.
-2. Compila el código.
-3. Ejecuta la clase principal `PlanillasApplication`.
-4. Observa el monto total a pagar en la planilla.
+   ```bash
+   git clone https://github.com/danny-yamith/expgd.git
+   cd expgd
 
-**Compartir Solución:** https://github.com/danny-yamith/expgd)https://github.com/danny-yamith/expgd
-
+## Ejecución de Pruebas
+   mvn test 

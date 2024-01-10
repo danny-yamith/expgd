@@ -1,4 +1,4 @@
-package com.pgd.planillas;
+package com.pgd.planillas.business;
 
 import com.pgd.planillas.model.Empleado;
 
