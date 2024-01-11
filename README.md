@@ -4,7 +4,7 @@ Este proyecto implementa un procesador de planillas para calcular el monto total
 
 ## Descripción
 
-El proyecto está escrito en Java 17 y utiliza Spring Boot y Lombok para facilitar el desarrollo. La clase `ProcesadorPlanillas` realiza el cálculo del monto total a pagar en una planilla, basándose en el pago mensual de los empleados activos.
+El proyecto está escrito en Java 17, Junit, Mockito y utiliza Spring Boot y Lombok para facilitar el desarrollo. La clase `ProcesadorPlanillas` realiza el cálculo del monto total a pagar en una planilla, basándose en el pago mensual de los empleados activos.
 
 ### Estructura del empleado
 
@@ -21,6 +21,7 @@ El proyecto incluye pruebas unitarias para cubrir diversos casos, incluyendo cas
 
 - Java 17
 - Maven
+- Spring Boot (dependencia de lombok)
 
 ### Pasos para Ejecutar
 
